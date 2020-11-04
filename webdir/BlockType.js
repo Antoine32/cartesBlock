@@ -119,6 +119,6 @@ class BlockType {
   }
 
   saveData() {
-    saveJSONObject(this.json, "block.json");
+    saveJSON(this.json, "block.json");
   }
 }
