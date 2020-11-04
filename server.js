@@ -1,41 +1,6 @@
 var liveServer = require("live-server");
-//const readline = require('readline');
 const network = require('./network.json');
 
-/*var networkInterfaces = os.networkInterfaces();
-
-var choice = [];
-var names = [];
-var it = Object.keys(networkInterfaces);
-
-for (var i = 0; i < it.length; i++) {
-    var internal = networkInterfaces[it[i]];
-    for (var j = 0; j < internal.length; j++) {
-        if (internal[j]['family'] == 'IPv4') {
-            choice.push(internal[j]['address']);
-            names.push(it[i]);
-        }
-    }
-}
-
-for (var i = 0; i < choice.length; i++) {
-    console.log(i + ": \'" + names[i] + "\': \'" + choice[i] + "\'");
-}
-console.log("");
-
-var ip = NaN;
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-quest();
-function quest() {
-    rl.question('host on: ', (answer) => {
-        ip = choice[parseInt(answer)];
-
-        if (ip != undefined) {*/
 var params = {
     port: network.port, // Set the server port. Defaults to 8080.
     host: network.ip, // Set the address to bind to. Defaults to 0.0.0.0 or process.env.IP.
@@ -49,12 +14,4 @@ var params = {
     middleware: [function (req, res, next) { next(); }] // Takes an array of Connect-compatible middleware that are injected into the server middleware stack
 };
 
-//console.log("");
 liveServer.start(params);
-
-/*rl.close();
-} else {
-quest();
-}
-});
-}*/
