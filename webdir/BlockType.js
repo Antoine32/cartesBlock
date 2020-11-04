@@ -10,6 +10,7 @@ class BlockType {
     this.inverse = 1;
     this.points = 0;
     this.average = createVector(0, 0);
+    this.json = [];
   }
 
   display() {
@@ -119,6 +120,6 @@ class BlockType {
   }
 
   saveData() {
-    saveJSONArray(this.json, "block.json");
+    saveJSONObject(this.json, "block.json");
   }
 }
