@@ -32,6 +32,10 @@ class Arragement {
 
     return this.json;
   }
+
+  saveData() {
+    saveJSONArray(this.json, "carte.json");
+  }
 }
 
 function evaluation(difficulter) {

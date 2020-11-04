@@ -1,9 +1,9 @@
 class BlockType {
-  constructor(x, y, name) {
+  constructor(x, y, type) {
     this.dots = [];
     this.position = createVector(x, y);
     this.pos = createVector(x, y);
-    this.name = name;
+    this.type = type;
     this.col = color(155, 0, 0, 200);
     this.multi = 1;
     this.rotation = 0;
@@ -106,7 +106,7 @@ class BlockType {
 
   getInfo() {
     this.json = {
-      "type": this.name,
+      "type": this.type,
       "position": {
         "x": this.pos.x,
         "y": this.pos.y
@@ -116,5 +116,9 @@ class BlockType {
     };
 
     return this.json;
+  }
+
+  saveData() {
+    saveJSONObject(this.json, this.type + ".json");
   }
 }
