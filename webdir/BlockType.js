@@ -119,6 +119,6 @@ class BlockType {
   }
 
   saveData() {
-    saveJSON(this.json, "block.json");
+    saveJSONArray(this.json, "block.json");
   }
 }
