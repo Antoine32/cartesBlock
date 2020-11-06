@@ -1,6 +1,6 @@
 class TrapeseGrand extends BlockType {
   constructor(x, y) {
-    super(x, y, "t1+r2+t1");
+    super(x, y, "grand trapèze");
     this.add(0, 0);
     this.add(1, 1);
     this.add(3, 1);

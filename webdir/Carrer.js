@@ -1,6 +1,6 @@
 class Carrer extends BlockType {
   constructor(x, y) {
-    super(x, y, "r1");
+    super(x, y, "carré");
     this.add(0, 0);
     this.add(0, 1);
     this.add(1, 1);

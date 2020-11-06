@@ -1,6 +1,6 @@
 class Triangle extends BlockType {
   constructor(x, y) {
-    super(x, y, "t2");
+    super(x, y, "triangle");
     this.add(0, 0);
     this.add(1, 1);
     this.add(2, 0);

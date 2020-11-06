@@ -1,6 +1,6 @@
 class RectanglePetit extends BlockType {
   constructor(x, y) {
-    super(x, y, "r3");
+    super(x, y, "petit rectangle");
     this.add(0, 0);
     this.add(0, 1);
     this.add(3, 1);
